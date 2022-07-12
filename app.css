@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.42857143;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img1 {
+    width: 100%;
+    height: auto;
+}
+
+.doctor-border {
+    background: linear-gradient(180deg, #034ea1 0, #00b7ac 100%);
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 12px;
+    border-radius: 0 25px 25px 0;
+}
+
+.card {
+    border-radius: 13px;
+    width: 1150px;
+}
+
+.caption {
+    margin: 0;
+    padding-top: 5px;
+    height: 1.7rem;
+    font-size: small;
+    font-weight: 10px;
+    color: #fff;
+    background: linear-gradient(180deg, #034ea1 0, #00b7ac 100%);
+    box-sizing: border-box;
+    border-radius: 13px 0 0 0;
+}
+
+#doc-img {
+    width: 100%;
+    background-size: cover;
+    border-radius: 0 0 0 10px;
+
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: left;
+    color: #034ea1;
+    opacity: 1;
+    letter-spacing: .23px;
+    line-height: 1.2;
+    height: auto;
+    min-height: 45px;
+}
+
+
+h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 20px;
+    margin-top: 25px;
+    text-align: left;
+    color: #240f39;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.card-text1 {
+    font-size: 1.2rem;
+    text-align: left;
+    font-family: Montserrat, sans-serif;
+    color: #240f39;
+    text-transform: capitalize;
+    opacity: 1;
+    margin-bottom: 2.5rem;
+}
+
+.card-text {
+    text-align: left;
+    font-family: Montserrat, sans-serif;
+    color: #240f39;
+    text-transform: capitalize;
+    opacity: 1;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.booking-btn {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 3px;
+}
+
+.btn {
+    background: #034fa1 padding-box;
+    border-radius: 6px;
+    /* padding: 3px 35px; */
+    font-size: 18px;
+    margin-top: 2px;
+}
+
+.pagination {
+    font-size: 15px;
+    margin: 30px auto 30px auto;
+}
+
+.pagination a {
+    border: 1px solid blue;
+    color: blue;
+}
+
+.docList {
+    background-image: url(https://www.manipalhospitals.com/assets/images/doctor-profile-bg.svg);
+    /* margin-top: 124px; */
+    padding-top: 58px;
+}
