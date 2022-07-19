@@ -8,6 +8,7 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
+    overflow-x: hidden;
 }
 
 .container {
@@ -122,26 +123,58 @@ h5 {
 }
 
 .sideBox {
-    height: auto;
+    /* height: auto; */
     box-shadow: 0 0 22px #02020265;
     border: none;
+    width: 30rem;
+    height: 534px;
 }
 
 .tabBox {
-    height: auto;
-    width: 750px;
-    border-radius: 13px;
+    background: #fff 0 0 no-repeat padding-box;
     box-shadow: 0 0 22px #02020265;
+    border-radius: 8px;
+    overflow: hidden;
     border: none;
+    width: 750px;
+    top: -7rem;
+
+}
+
+.tabBox li {
+    letter-spacing: .17px;
+    color: #121212;
+    line-height: 21px;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 4px;
+}
+
+li {
+    font-size: 15px;
+    font-family: Montserrat;
+    opacity: 1;
+}
+
+.list-group-item {
+    border-left: 1px solid #b4e3d7;
 }
 
 .tab-content {
     padding: 15px 18px 35px 0;
 }
 
+
+.tabBox.nav>li>a {
+    padding: 10px 12px !important;
+    border-radius: 4px;
+}
+
 .banner-appointment {
     height: 400px;
     background-color: #00b7ac;
+    background-image: url(https://www.manipalhospitals.com/assets/images/doctor-profile-bg.svg);
 }
 
 .banner-profile {
@@ -153,11 +186,15 @@ h5 {
 }
 
 .list-group-horizontal>.list-group-item:first-child {
-    border-top-left-radius: 13px;
+    border-top-left-radius: 7px;
 }
 
 .list-group-horizontal>.list-group-item:last-child {
-    border-top-right-radius: 13px;
+    border-right: 0;
+}
+
+.list-group-horizontal>.list-group-item {
+    border-bottom: 0;
 }
 
 .section-heading {
@@ -275,4 +312,87 @@ span.not-avail {
 .section2 {
     padding: 0 10px;
     margin-bottom: 0;
+}
+
+.tab-content .tab-pane.active {
+    height: 359px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+.tab-content .tab-pane h4 {
+    margin-bottom: 11px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #034fa1;
+}
+
+.list-group-item:first-child.active {
+    background-color: #e5f6f1 !important;
+    border-top-left-radius: 10px;
+}
+
+.list-group-item.active {
+    z-index: 2;
+    color: black;
+    background-color: #fff;
+    border: none;
+}
+
+.border-main {
+    background: linear-gradient(90deg, #034ea1 -29.1%, #00b7ac 121.6%);
+    height: 10px;
+}
+
+.nav.nav-pills {
+    background: #fbfbfb 0 0 no-repeat padding-box;
+    border-radius: 8px 8px 0 0;
+    display: inline-flex;
+    justify-content: flex-start;
+}
+
+.nav.nav-pills a {
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+}
+
+.nav.nav-pills a span {
+    text-align: left;
+    letter-spacing: .13px;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-left: 7px;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 16px;
+    font-family: Montserrat, sans-serif;
+}
+
+.tabBox a img {
+    position: relative;
+    z-index: 100;
+}
+
+.list-group:first-child {
+    border-top-left-radius: 8px;
+}
+
+.list-group:last-child {
+    border-top-left-radius: 0;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #00b7ab6e;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    border: 3px solid #034fa1;
 }
