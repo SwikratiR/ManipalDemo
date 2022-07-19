@@ -11,11 +11,25 @@ body {
     overflow-x: hidden;
 }
 
+section#careerL {
+    height: 860px;
+}
+
+section#careerL {
+    margin-top: 7em;
+}
+
 .container {
-    padding-right: 85px;
-    padding-left: 85px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    width: 100% !important;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
 .doctor-border {
@@ -28,8 +42,14 @@ body {
     border-radius: 0 25px 25px 0;
 }
 
-.card {
+/* .card {
     border-radius: 13px;
+} */
+
+.profileBox {
+    margin-top: 55px;
+    background: #fff;
+    border-radius: 15px;
 }
 
 .caption {
@@ -45,7 +65,7 @@ body {
 }
 
 #doc-img {
-    width: 100%;
+    /* width: 100%;   95%*/
     height: 200px;
     background-size: cover;
     border-radius: 0 0 0 10px;
@@ -62,7 +82,7 @@ body {
     margin-right: -5px;
 } */
 
-h3 {
+h1 {
     font-size: 21px;
     font-weight: bolder;
     text-align: left;
@@ -83,6 +103,17 @@ h3 {
     margin-right: 30px;
 }
 
+/* description */
+.card-text1 {
+    font-size: 1rem;
+    text-align: left;
+    font-family: Montserrat, sans-serif;
+    color: #240f39;
+    text-transform: capitalize;
+    opacity: 1;
+    margin-bottom: 2.5rem;
+}
+
 h5 {
     font-size: 1rem;
     font-weight: bold;
@@ -92,16 +123,6 @@ h5 {
     color: #240f39;
     text-transform: uppercase;
     opacity: 1;
-}
-
-.card-text1 {
-    font-size: 1rem;
-    text-align: left;
-    font-family: Montserrat, sans-serif;
-    color: #240f39;
-    text-transform: capitalize;
-    opacity: 1;
-    margin-bottom: 2.5rem;
 }
 
 .card-text {
@@ -116,18 +137,24 @@ h5 {
 }
 
 .profileBox {
-    width: 750px;
+    width: 100%;
     height: auto;
     box-shadow: 0 0 22px #02020265;
     border: none;
 }
 
+.profileBox .row {
+    margin-left: 0;
+}
+
 .sideBox {
     /* height: auto; */
     box-shadow: 0 0 22px #02020265;
+    border-radius: 15px;
     border: none;
     width: 30rem;
     height: 534px;
+    margin-left: 10px;
 }
 
 .tabBox {
@@ -136,7 +163,7 @@ h5 {
     border-radius: 8px;
     overflow: hidden;
     border: none;
-    width: 750px;
+    width: 100%;
     top: -7rem;
 
 }
@@ -395,4 +422,131 @@ span.not-avail {
 ::-webkit-scrollbar-thumb {
     border-radius: 20px;
     border: 3px solid #034fa1;
+}
+
+@media only screen and (max-width: 1200px) {
+    #section-heading {
+        padding: 10px 5px;
+    }
+
+    .fixed-form {
+        position: absolute;
+        top: 0;
+        width: 300px;
+        z-index: 99;
+        right: 35px;
+    }
+
+    .tabBox {
+        width: 614px;
+    }
+}
+
+@media only screen and (min-device-width:820px) and (max-device-width: 912px) {
+    section#careerL {
+        min-height: 1600px;
+    }
+
+    .sideBox {
+        top: 24%;
+        right: 54px;
+        height: auto;
+    }
+
+    .tabBox {
+        width: 720px;
+        height: auto;
+    }
+
+    .profileBox {
+        width: 720px;
+    }
+
+    .container {
+        margin-left: 35px;
+        margin-right: 35px;
+        width: 750px;
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .banner-appointment {
+        height: auto;
+    }
+
+    .banner-appointment .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .section-heading {
+        padding: 10px 5px !important;
+    }
+
+    .section2 {
+        height: auto;
+    }
+
+    .profileBox {
+        width: auto;
+        margin: 0 10px;
+    }
+
+    .tabBox {
+        width: auto;
+        margin: 21px;
+        top: -45px;
+    }
+
+    .sideBox {
+        position: relative;
+        margin: 30px 40px;
+        width: 97%;
+    }
+
+    .doctor-border {
+        display: none;
+    }
+
+    .caption {
+        display: none;
+    }
+
+    #doc-img {
+        width: 100%;
+        border-top-left-radius: 17px;
+        border-top-right-radius: 17px;
+        padding-top: 0px;
+    }
+
+    .card-text1 {
+        position: relative;
+        font-size: 13px;
+        margin-bottom: -40px;
+        top: -27px;
+        height: 113px
+    }
+
+    .profileBox h1 {
+        font-size: 14px;
+        min-height: 35px;
+    }
+
+    .goBack {
+        padding: 3px 19px 3px 19px;
+        position: absolute;
+        margin-top: 205px;
+        margin-right: 5px;
+    }
+
+    .nav.nav-pills a span {
+        display: none;
+    }
+
+    .nav.nav-pills a img {
+        width: 23px;
+        height: 23px;
+    }
 }
